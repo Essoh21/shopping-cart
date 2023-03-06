@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css'
 import './style/search.css'
+import './style/Cart.css'
+import './style/App.css'
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 
