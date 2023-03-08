@@ -1,0 +1,8 @@
+button {
+    color: var(--header-color);
+    background-color: #0a0;
+    border: 1px solide green;
+    border-radius: .3rem;
+    font-weight: bold;
+    padding: .2rem .3rem;
+}

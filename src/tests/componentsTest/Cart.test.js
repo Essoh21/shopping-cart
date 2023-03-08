@@ -12,7 +12,7 @@ describe("Cart", () => {
     )
     test(
         "it render the Cart component with the correct number of articles ", () => {
-            const numberOfArticles = 5;
+            const numberOfArticles = 10;
             const { getByText } = render(<Cart numberOfArticles={numberOfArticles} />);
             const numberOfArticlesSpan = getByText(numberOfArticles.toString());
             expect(numberOfArticlesSpan).toBeInTheDocument();

@@ -1,0 +1,33 @@
+.NavBar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: ". Ul";
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 .2rem;
+    background-color: #555;
+}
+
+.NavBar ul {
+    grid-area: Ul;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.NavBar li {
+    list-style: none;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+.NavBar a:hover {
+    text-decoration: underline;
+}
