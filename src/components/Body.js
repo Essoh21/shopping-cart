@@ -1,11 +1,19 @@
 import Card from "./bodyComponents/Card";
 import images from "../imagesSrcs";
+import AssideNavBar from "./bodyComponents/AssideNavBar";
 
-const Body = () => {
+const Body = (props) => {
     return (
         <div className="Body">
-            Hello World!
-            <Card src={images[0].src} title='hello' />
+            <AssideNavBar />
+            <div className="Cards">
+                {
+                    images.map((card) => {
+                        return <Card key={card.id} src={card.src} title={card.title} />
+                    })
+                }
+            </div>
+
         </div>
     )
 }

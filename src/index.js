@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style/index.css'
-import './style/search.css'
-import './style/Cart.css'
-import './style/App.css'
-import './style/card.css'
-import './style/NavBar.css'
-import './style/AddToCart.css'
+import './style/index.css';
+import './style/search.css';
+import './style/Cart.css';
+import './style/App.css';
+import './style/card.css';
+import './style/NavBar.css';
+import './style/AddToCart.css';
+import './style/AssideNavBar.css';
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 

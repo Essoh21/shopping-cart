@@ -1,11 +1,12 @@
-import { render } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
+import { BrowserRouter } from "react-router-dom";
 import Body from "../../components/Body"
 
 describe("Body", () => {
     test("it displays Cards", () => {
-        const { getByText } = render(<Body />);
-        const helloWorld = getByText(/Hello world!/i);
-        expect(helloWorld).toBeInTheDocument();
+        render(<BrowserRouter> <Body /> </BrowserRouter>);
+        const imgs = screen.getAllByRole('img')
+        expect(imgs.length).toBeGreaterThan(0);
     }
     )
 })

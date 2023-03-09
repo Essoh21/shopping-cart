@@ -5,10 +5,9 @@ function Card(props) {
 
     return (
         <div className="card" onClick={props.handleClick}>
-            <img src={props.src} alt={props.title} onClick={props.handleItemClcik} />
+            <img src={props.src} alt={props.title} onClick={props.handleItemClick} />
             <div className="card-title">{props.title}</div>
             <AddToCart />
-
         </div>
     );
 }
