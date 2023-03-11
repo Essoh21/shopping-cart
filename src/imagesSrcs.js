@@ -25,108 +25,129 @@ const images = [
     {
         id: 1,
         src: aomineDaiki,
-        title: 'Aomine Daiki'
+        title: 'Aomine Daiki',
+        type: "Basket",
     },
     {
         id: 2,
         src: earth,
-        title: 'Earth'
+        title: 'Earth',
+        type: "Planet",
     },
     {
         id: 3,
         src: dancingRasta,
-        title: 'Dancing Rasta'
+        title: 'Dancing Rasta',
+        type: "Basket",
     },
     {
         id: 4,
         src: earthAndMoon,
-        title: 'Earth and Moon'
+        title: 'Earth and Moon',
+        type: "Planet",
     },
     {
         id: 5,
         src: elMatador,
-        title: 'El Matador'
+        title: 'El Matador',
+        type: "Basket",
     },
     {
         id: 6,
         src: hulk,
-        title: 'Hulk'
+        title: 'Hulk',
+        type: "Actor",
     },
     {
         id: 7,
         src: jupiter,
-        title: 'Jupiter'
+        title: 'Jupiter',
+        type: "Planet",
     },
     {
         id: 8,
         src: kiseRoyuta,
-        title: 'Kise Royuta'
+        title: 'Kise Royuta',
+        type: "Basket",
     },
     {
         id: 9,
         src: mars,
-        title: 'Mars'
+        title: 'Mars',
+        type: "Planet",
     },
     {
         id: 10,
         src: mercury,
-        title: 'Mercury'
+        title: 'Mercury',
+        type: "Planet",
     },
     {
         id: 11,
         src: midorimaShintarou,
-        title: 'Midorima Shintarou'
+        title: 'Midorima Shintarou',
+        type: "Basket",
     },
 
     {
         id: 12,
         src: moana,
-        title: 'Moana'
+        title: 'Moana',
+        type: "Actor",
     },
     {
         id: 13,
         src: murasakibaraAtsushi,
-        title: 'Murasakibara Atsushi'
+        title: 'Murasakibara Atsushi',
+        type: "Basket",
     },
     {
         id: 14,
         src: neptune,
-        title: 'Neptune'
+        title: 'Neptune',
+        type: "Planet",
     },
     {
         id: 15,
         src: saturn,
-        title: 'Saturn'
+        title: 'Saturn',
+        type: "Planet",
     },
     {
         id: 16,
         src: shakes,
-        title: 'Shakes'
+        title: 'Shakes',
+        type: "Foot",
     },
     {
         id: 17,
         src: spiderman,
-        title: 'Spider Man'
+        title: 'Spider Man',
+        type: "Actor",
     },
     {
         id: 18,
         src: taigaKagami,
-        title: 'Taiga Kagami'
+        title: 'Taiga Kagami',
+        type: "Basket",
     },
     {
         id: 19,
         src: twistingTyger,
-        title: 'Twisting Tyger'
+        title: 'Twisting Tyger',
+        type: "Foot",
     },
     {
         id: 20,
         src: uranus,
-        title: 'Uranus'
+        title: 'Uranus',
+        type: "Planet",
     },
     {
         id: 21,
         src: venus,
-        title: 'Venus'
+        title: 'Venus',
+        type: "Planet",
     },
 ]
 

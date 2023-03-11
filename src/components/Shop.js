@@ -2,13 +2,21 @@ import Card from "./bodyComponents/Card";
 import images from "../imagesSrcs";
 import AssideNavBar from "./bodyComponents/AssideNavBar";
 
-const Body = (props) => {
+const Shop = () => {
+    const cathegory = "all"
+    let imagesToUse = images;
+    if (cathegory !== "all") {
+        imagesToUse = images.filter((img) => {
+            return img.type === cathegory;
+        })
+    }
+
     return (
         <div className="Body">
             <AssideNavBar />
             <div className="Cards">
                 {
-                    images.map((card) => {
+                    imagesToUse.map((card) => {
                         return <Card key={card.id} src={card.src} title={card.title} />
                     })
                 }
@@ -18,4 +26,4 @@ const Body = (props) => {
     )
 }
 
-export default Body;
+export default Shop;

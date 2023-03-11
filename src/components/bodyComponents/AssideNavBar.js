@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
 
-const AssideNavBar = () => {
+const AssideNavBar = (props) => {
     return (
         <nav className="AssideNavBar">
+            <h4 style={{ color: "#555", textTransform: "uppercase" }}>Cathegories</h4>
             <ul>
-                <li><Link to="Kurokos Basket">KuroKos Basket</Link></li>
-                <li><Link to="Planets">Planets</Link></li>
-                <li><Link to="Super mens">Super Mens</Link></li>
+                <li><Link to="Basket">KuroKos Basket</Link></li>
+                <li><Link to="Planet">Planets</Link></li>
+                <li><Link to="Actor">Super Mens</Link></li>
+                <li><Link to="Foot">Foot Players</Link></li>
             </ul>
         </nav>
     )

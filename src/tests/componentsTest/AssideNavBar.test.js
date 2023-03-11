@@ -6,7 +6,7 @@ describe("AssideNavBar", () => {
     test("it displays 3  links", () => {
         render(<BrowserRouter> <AssideNavBar /></BrowserRouter>);
         const links = screen.getAllByRole("link");
-        expect(links.length).toBe(3);
+        expect(links.length).toBe(4);
     }
     )
 })
