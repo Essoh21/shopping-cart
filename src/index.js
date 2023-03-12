@@ -8,6 +8,7 @@ import './style/card.css';
 import './style/NavBar.css';
 import './style/AddToCart.css';
 import './style/AssideNavBar.css';
+import './style/ItemDetails.css';
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 
