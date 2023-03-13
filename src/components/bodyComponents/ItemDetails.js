@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import images from "../../imagesSrcs";
 import { loremIpsum, LoremIpsum } from "react-lorem-ipsum";
+import BuyCard from "./BuyCard";
 
 const ItemDetails = () => {
     const { parameter } = useParams();
@@ -21,6 +22,7 @@ const ItemDetails = () => {
                 <h3>{currentItem.title}</h3>
                 <LoremIpsum p={3} />
             </div>
+            <BuyCard Price={currentItem.price} />
         </div>
     )
 }

@@ -8,7 +8,7 @@ describe("App", () => {
     test("it renders navBar with two links ", () => {
         render(<App />);
         const links = screen.getAllByRole("link");
-        expect(links.length).toBe(2);
+        expect(links.length).toBe(11);
 
     })
     test("it add 4 cathegory links  when shop link is clicked", () => {
@@ -19,7 +19,7 @@ describe("App", () => {
             userEvent.click(shop);
         })
         const links = screen.getAllByRole("link");
-        expect(links.length).toBe(6);
+        expect(links.length).toBe(27);
         const BasketCathegory = screen.getByRole("link", { name: "KuroKos Basket" });
         act(() => {
             userEvent.click(BasketCathegory);

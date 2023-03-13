@@ -15,10 +15,12 @@ const App = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Page cathegory="Planet" />} />
-                <Route path="Shop" element={<Shop />} />
-                <Route path="Shop/:parameter" element={<ItemDetails />} />
-                <Route path="Shop/:cathegory" element={<Cathegory />} />
-                <Route path=":parameter" element={<ItemDetails />} />
+                <Route path="/Shop" element={<Shop />} />
+                <Route path="/Shop/:cathegory" element={<Cathegory />} />
+                <Route path="/Shop/Item/:parameter" element={<ItemDetails />} />
+                <Route path="/Shop/:cathegory/Item/:parameter" element={<ItemDetails />} />
+                <Route path="/Item/:parameter" element={<ItemDetails />} />
+                <Route path="/:parameter" element={<ItemDetails />} />
             </Routes>
 
         </BrowserRouter>

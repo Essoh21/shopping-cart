@@ -5,8 +5,8 @@ import AddToCart from './AddToCart';
 function Card(props) {
 
     return (
-        <div className="card" onClick={props.handleClick}>
-            <Link to={props.title}> <img src={props.src} alt={props.title} onClick={props.handleItemClick} /></Link>
+        <div className="card" onClick={props.handleItemClick}>
+            <Link to={"Item/" + props.title}> <img src={props.src} alt={props.title} onClick={props.handleItemClick} /></Link>
             <div className="card-title">{props.title}</div>
             <AddToCart />
         </div>

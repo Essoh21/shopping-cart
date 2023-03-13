@@ -1,0 +1,21 @@
+.BuyCard {
+    width: 25rem;
+    height: 10rem;
+    color: blue;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #555;
+    border-radius: .5rem;
+    padding: 0 1rem;
+}
+
+.BuyCard div {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}

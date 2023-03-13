@@ -3,11 +3,18 @@
     height: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row;
     gap: 2rem;
     margin: 0;
     padding: 2rem;
 }
 
+.ItemDetails img {
+    width: 20rem;
+    height: auto;
+}
+
 .ItemDetails p {
     color: #555;
+    margin-right: 2rem;
 }
