@@ -17,7 +17,7 @@ const Shop = () => {
             <div className="Cards">
                 {
                     imagesToUse.map((card) => {
-                        return <Card key={card.id} src={card.src} title={card.title} />
+                        return <Card key={card.id} src={card.src} title={card.title} currentItem={card} />
                     })
                 }
             </div>
