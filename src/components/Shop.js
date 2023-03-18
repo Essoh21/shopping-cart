@@ -2,7 +2,7 @@ import Card from "./bodyComponents/Card";
 import images from "../imagesSrcs";
 import AssideNavBar from "./bodyComponents/AssideNavBar";
 
-const Shop = () => {
+const Shop = (props) => {
     const cathegory = "all"
     let imagesToUse = images;
     if (cathegory !== "all") {
@@ -17,7 +17,13 @@ const Shop = () => {
             <div className="Cards">
                 {
                     imagesToUse.map((card) => {
-                        return <Card key={card.id} src={card.src} title={card.title} currentItem={card} />
+                        return <Card
+                            key={card.id}
+                            src={card.src}
+                            title={card.title}
+                            item={card}
+                            handleAddToCart={props.handleAddToCart}
+                        />
                     })
                 }
             </div>

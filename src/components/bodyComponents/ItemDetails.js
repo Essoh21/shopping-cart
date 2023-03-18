@@ -3,7 +3,7 @@ import images from "../../imagesSrcs";
 import { loremIpsum, LoremIpsum } from "react-lorem-ipsum";
 import BuyCard from "./BuyCard";
 
-const ItemDetails = () => {
+const ItemDetails = (props) => {
     const { parameter } = useParams();
     const itemDescription = loremIpsum();
     const items = JSON.parse(JSON.stringify(images))
@@ -22,7 +22,11 @@ const ItemDetails = () => {
                 <h3>{currentItem.title}</h3>
                 <LoremIpsum p={3} />
             </div>
-            <BuyCard Price={currentItem.price} />
+            <BuyCard
+                Price={currentItem.price}
+                currentItem={currentItem}
+                handleAddToCart={props.handleAddToCart}
+            />
         </div>
     )
 }

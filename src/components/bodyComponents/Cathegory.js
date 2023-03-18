@@ -2,7 +2,7 @@ import Card from "./Card";
 import images from "../../imagesSrcs";
 import { useParams } from "react-router-dom";
 
-const Cathegory = () => {
+const Cathegory = (props) => {
     const { cathegory } = useParams();
     let imagesToUse = images.filter((img) => {
         return img.type === cathegory;
@@ -14,7 +14,13 @@ const Cathegory = () => {
             <div className="Cards">
                 {
                     imagesToUse.map((card) => {
-                        return <Card key={card.id} src={card.src} title={card.title} currentItem={card} />
+                        return <Card
+                            key={card.id}
+                            src={card.src}
+                            title={card.title}
+                            handleAddToCart={props.handleAddToCart}
+
+                            item={card} />
                     })
                 }
             </div>

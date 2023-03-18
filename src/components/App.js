@@ -6,21 +6,50 @@ import Page from "./Page";
 import NavBar from "./NavBar";
 import Cathegory from "./bodyComponents/Cathegory";
 import ItemDetails from "./bodyComponents/ItemDetails";
+import { useEffect, useState } from "react";
 
 
 const App = () => {
+    let savedData = !localStorage.getItem("cart")
+        ? []
+        : JSON.parse(localStorage.getItem("cart"));
+
+    const [cart, setCart] = useState(savedData);
+    useEffect(() => {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }, [cart])
+
+    const handleAddToCart = (item) => {
+        setCart(
+            prevousCart => [...prevousCart, item]
+        );
+    }
     return (
         <BrowserRouter>
-            <Header />
+            <Header userCart={cart} />
             <NavBar />
             <Routes>
-                <Route path="/" element={<Page cathegory="Planet" />} />
-                <Route path="/Shop" element={<Shop />} />
-                <Route path="/Shop/:cathegory" element={<Cathegory />} />
-                <Route path="/Shop/Item/:parameter" element={<ItemDetails />} />
-                <Route path="/Shop/:cathegory/Item/:parameter" element={<ItemDetails />} />
-                <Route path="/Item/:parameter" element={<ItemDetails />} />
-                <Route path="/:parameter" element={<ItemDetails />} />
+                <Route path="/"
+                    element={<Page cathegory="Planet" userCart={cart}
+                        handleAddToCart={handleAddToCart} />} />
+                <Route path="/Shop" element={<Shop
+                    handleAddToCart={handleAddToCart}
+                />} />
+                <Route path="/Shop/:cathegory" element={<Cathegory
+                    handleAddToCart={handleAddToCart}
+                />} />
+                <Route path="/Shop/Item/:parameter"
+                    element={<ItemDetails
+                        handleAddToCart={handleAddToCart} />} />
+                <Route path="/Shop/:cathegory/Item/:parameter"
+                    element={<ItemDetails
+                        handleAddToCart={handleAddToCart} />} />
+                <Route path="/Item/:parameter"
+                    element={<ItemDetails
+                        handleAddToCart={handleAddToCart} />} />
+                <Route path="/:parameter"
+                    element={<ItemDetails
+                        handleAddToCart={handleAddToCart} />} />
             </Routes>
 
         </BrowserRouter>

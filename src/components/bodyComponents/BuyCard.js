@@ -10,7 +10,11 @@ const BuyCard = (props) => {
                 </h4>
             </div>
             <div>
-                <AddToCart />
+                <AddToCart
+                    handleAddToCartClick={() => {
+                        props.handleAddToCart(props.currentItem);
+                    }}
+                />
                 <Buy />
             </div>
         </div>

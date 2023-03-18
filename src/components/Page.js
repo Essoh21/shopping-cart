@@ -10,7 +10,13 @@ const HomePage = (props) => {
             <div className="Cards">
                 {
                     imagesToUseHere.map((card) => {
-                        return <Card key={card.id} src={card.src} title={card.title} currentItem={card} />
+                        return <Card
+                            key={card.id}
+                            src={card.src}
+                            title={card.title}
+                            handleAddToCart={props.handleAddToCart}
+                            item={card}
+                        />
                     })
                 }
             </div>

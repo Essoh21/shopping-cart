@@ -1,23 +1,15 @@
 
-import { useEffect, useState } from "react";
 import Cart from "./headerComponents/Cart";
 import Search from "./headerComponents/Search";
 
-const Header = () => {
-
-    const [storedData, setStoredData] = useState([]);
-    useEffect(() => {
-        const data = localStorage.getItem("cart");
-        if (data) {
-            setStoredData(JSON.parse(data));
-        }
-
-    }, []);
+const Header = (props) => {
 
     return (
         <div className="Header">
             <Search />
-            <Cart numberOfArticles={storedData.length} />
+            <Cart numberOfArticles={props.userCart.length}
+                userCart={props.userCart}
+            />
         </div>
     )
 }
