@@ -21,7 +21,7 @@ import twistingTyger from './imgs/twistingTyger.png';
 import uranus from './imgs/uranus.png';
 import venus from './imgs/venus.png';
 
-const images = [
+let images = [
     {
         id: 1,
         src: aomineDaiki,
@@ -149,6 +149,11 @@ const images = [
         title: 'Venus',
         type: "Planet",
     },
-]
+];
+
+images.forEach((image) => {
+    image["price"] = Math.round(Math.random() * 40, 2);
+    image["number"] = 1;
+})
 
 export default images

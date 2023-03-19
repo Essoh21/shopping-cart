@@ -2,6 +2,7 @@ import Card from "./Card";
 import images from "../../imagesSrcs";
 import { useParams } from "react-router-dom";
 
+alert(images[0].number)
 const Cathegory = (props) => {
     const { cathegory } = useParams();
     let imagesToUse = images.filter((img) => {
@@ -19,7 +20,6 @@ const Cathegory = (props) => {
                             src={card.src}
                             title={card.title}
                             handleAddToCart={props.handleAddToCart}
-
                             item={card} />
                     })
                 }

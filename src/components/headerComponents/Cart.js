@@ -1,6 +1,7 @@
 import cart from '../../icons/bitmap.png';
 
 const Cart = (props) => {
+
     return (
         <div
             className='Cart'

@@ -23,7 +23,7 @@ const ItemDetails = (props) => {
                 <LoremIpsum p={3} />
             </div>
             <BuyCard
-                Price={currentItem.price}
+                price={currentItem.price}
                 currentItem={currentItem}
                 handleAddToCart={props.handleAddToCart}
             />

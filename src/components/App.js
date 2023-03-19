@@ -20,6 +20,7 @@ const App = () => {
     }, [cart])
 
     const handleAddToCart = (item) => {
+
         setCart(
             prevousCart => [...prevousCart, item]
         );

@@ -6,7 +6,7 @@ const BuyCard = (props) => {
         <div className="BuyCard">
             <div>
                 <h4>
-                    Price: {props.price}
+                    Price: {props.price} $
                 </h4>
             </div>
             <div>
