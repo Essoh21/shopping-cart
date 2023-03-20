@@ -27,12 +27,22 @@ const App = () => {
         );
     }
 
+    const onQtyChange = (id, event) => {
+        const newCart = cart.map(item => {
+            if (item.id === id) {
+                return { ...item, number: Number(event.target.value) };
+            }
+            return item;
+        });
+        setCart(newCart);
+    }
+
     return (
         <BrowserRouter>
             <Header userCart={cart} />
             <NavBar />
             <Routes>
-                <Route path="/checkout" element={<Checkout cart={cart} />} />
+                <Route path="/checkout" element={<Checkout cart={cart} onQtyChange={onQtyChange} />} />
                 <Route path="/"
                     element={<Page cathegory="Planet" userCart={cart}
                         handleAddToCart={handleAddToCart} />} />

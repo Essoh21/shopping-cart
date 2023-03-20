@@ -1,7 +1,9 @@
 import Button from "./bodyComponents/Button";
 import Item from "./checkoutComponents/Item";
 
-const Checkout = ({ cart, handleInputChange }) => {
+const Checkout = ({ cart, onQtyChange }) => {
+
+    const subbtotal = cart.reduce((prev, cur) => prev + (cur.number * Number(cur.price)), 0)
     return (
         <div className="Checkout">
             <h4> Shopping Cart</h4>
@@ -9,13 +11,16 @@ const Checkout = ({ cart, handleInputChange }) => {
             <div className="SelectedItems">
                 {cart.map((item) => {
                     return <Item key={item.id} title={item.title}
+                        price={item.price}
                         src={item.src} number={item.number}
-                        handleInputChange={handleInputChange} />
+                        handleQtyChange={(event) => {
+                            onQtyChange(item.id, event)
+                        }} />
                 })}
             </div>
             <hr />
             <div className="Subtotal">
-                Subtotal: {58888}$
+                Subtotal: {subbtotal}$
             </div>
             <Button buttonName={"Checkout"} ClassName={"checkoutButton"} />
         </div>
