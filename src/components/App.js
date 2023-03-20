@@ -36,13 +36,17 @@ const App = () => {
         });
         setCart(newCart);
     }
-
+    const onRemoveButtonClick = (id) => {
+        const newCart = cart.filter(item => item.id !== id);
+        setCart(newCart);
+    };
     return (
         <BrowserRouter>
             <Header userCart={cart} />
             <NavBar />
             <Routes>
-                <Route path="/checkout" element={<Checkout cart={cart} onQtyChange={onQtyChange} />} />
+                <Route path="/checkout" element={<Checkout cart={cart} onQtyChange={onQtyChange}
+                    onRemoveButtonClick={onRemoveButtonClick} />} />
                 <Route path="/"
                     element={<Page cathegory="Planet" userCart={cart}
                         handleAddToCart={handleAddToCart} />} />

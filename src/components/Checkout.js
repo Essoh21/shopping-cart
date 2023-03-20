@@ -1,7 +1,7 @@
 import Button from "./bodyComponents/Button";
 import Item from "./checkoutComponents/Item";
 
-const Checkout = ({ cart, onQtyChange }) => {
+const Checkout = ({ cart, onQtyChange, onRemoveButtonClick }) => {
 
     const subbtotal = cart.reduce((prev, cur) => prev + (cur.number * Number(cur.price)), 0)
     return (
@@ -15,7 +15,9 @@ const Checkout = ({ cart, onQtyChange }) => {
                         src={item.src} number={item.number}
                         handleQtyChange={(event) => {
                             onQtyChange(item.id, event)
-                        }} />
+                        }}
+                        handleButtonClick={() => onRemoveButtonClick(item.id)}
+                    />
                 })}
             </div>
             <hr />

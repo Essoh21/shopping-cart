@@ -1,6 +1,6 @@
 import Button from "../bodyComponents/Button";
 
-const Item = ({ src, title, number, handleQtyChange, price }) => {
+const Item = ({ src, title, number, handleQtyChange, price, handleButtonClick }) => {
 
     return (
         <div className="selected-item">
@@ -17,7 +17,7 @@ const Item = ({ src, title, number, handleQtyChange, price }) => {
                             onChange={handleQtyChange}
                         />
                     </label>
-                    <Button buttonName="remove" />
+                    <Button buttonName="remove" handleButtonClick={handleButtonClick} />
                 </div>
             </div>
         </div>
