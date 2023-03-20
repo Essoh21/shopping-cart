@@ -10,6 +10,7 @@ import './style/AddToCart.css';
 import './style/AssideNavBar.css';
 import './style/ItemDetails.css';
 import './style/BuyCard.css';
+import './style/Checkout.css';
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 

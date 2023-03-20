@@ -7,6 +7,7 @@ import NavBar from "./NavBar";
 import Cathegory from "./bodyComponents/Cathegory";
 import ItemDetails from "./bodyComponents/ItemDetails";
 import { useEffect, useState } from "react";
+import Checkout from "./Checkout";
 
 
 const App = () => {
@@ -25,11 +26,13 @@ const App = () => {
             prevousCart => [...prevousCart, item]
         );
     }
+
     return (
         <BrowserRouter>
             <Header userCart={cart} />
             <NavBar />
             <Routes>
+                <Route path="/checkout" element={<Checkout cart={cart} />} />
                 <Route path="/"
                     element={<Page cathegory="Planet" userCart={cart}
                         handleAddToCart={handleAddToCart} />} />

@@ -1,0 +1,81 @@
+.Checkout {
+    margin: 0;
+    padding: 2rem 10%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+}
+
+h5 {
+    margin: 0;
+}
+
+.SelectedItems {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.item-inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.item-inputs input {
+    margin: 0;
+}
+
+.SelectedItems label,
+.SelectedItems button {
+    box-sizing: border-box;
+    margin: 0;
+    height: 1.5rem;
+}
+
+.SelectedItems button {
+    background-color: #555;
+    color: var(--header-color);
+}
+
+.SelectedItems img {
+    height: 8vh;
+}
+
+.SelectedItems .Details {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkoutButton {
+    padding: .2rem .5rem;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.Subtotal {
+    width: 100%;
+    text-align: end;
+    font-weight: bold;
+    color: #555;
+}
+
+.selected-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
