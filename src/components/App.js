@@ -14,6 +14,7 @@ const App = () => {
     let savedData = !localStorage.getItem("cart")
         ? []
         : JSON.parse(localStorage.getItem("cart"));
+    const [searchTerm, setSearchTerm] = useState("");
 
     const [cart, setCart] = useState(savedData);
     useEffect(() => {
@@ -21,12 +22,18 @@ const App = () => {
     }, [cart])
 
     const handleAddToCart = (item) => {
-
+        if (cart.some((cartItem) => cartItem.id === item.id)) {
+            return;
+        }
         setCart(
             prevousCart => [...prevousCart, item]
         );
     }
 
+    const onSearchChange = (event) => {
+        const searchTerm = event.target.value;
+        setSearchTerm(searchTerm);
+    }
     const onQtyChange = (id, event) => {
         const newCart = cart.map(item => {
             if (item.id === id) {
@@ -42,7 +49,7 @@ const App = () => {
     };
     return (
         <BrowserRouter>
-            <Header userCart={cart} />
+            <Header userCart={cart} onSearchChange={onSearchChange} searchTerm={searchTerm} />
             <NavBar />
             <Routes>
                 <Route path="/checkout" element={<Checkout cart={cart} onQtyChange={onQtyChange}

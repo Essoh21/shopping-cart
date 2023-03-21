@@ -9,7 +9,7 @@ const Header = (props) => {
 
     return (
         <div className="Header">
-            <Search />
+            <Search onSearchChange={props.onSearchChange} searchTerm={props.searchTerm} />
             <Cart numberOfArticles={numberOfArticles}
                 userCart={props.userCart}
             />
