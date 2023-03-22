@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.489ac196.css",
+    "main.js": "/shopping-cart/static/js/main.dd34276d.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/moana.png": "/shopping-cart/static/media/moana.353ca7172abd7932ffe7.png",
+    "static/media/midorimaShintarou.png": "/shopping-cart/static/media/midorimaShintarou.9e0e038daf5e0ef9e947.png",
+    "static/media/spiderman.png": "/shopping-cart/static/media/spiderman.b5eafb4d5c2bce1748c5.png",
+    "static/media/kiseRoyuta.png": "/shopping-cart/static/media/kiseRoyuta.2b7aeb407cfc7bad290a.png",
+    "static/media/earth.png": "/shopping-cart/static/media/earth.5c0605a18ac1abaf0e82.png",
+    "static/media/hulk.png": "/shopping-cart/static/media/hulk.ea3a4091dc371205580b.png",
+    "static/media/mars.png": "/shopping-cart/static/media/mars.a4798cabc4f2a03daf61.png",
+    "static/media/muraskibaraAtsushi.png": "/shopping-cart/static/media/muraskibaraAtsushi.cbb529855799f9bec964.png",
+    "static/media/venus.png": "/shopping-cart/static/media/venus.d888e0649012f4f9a34d.png",
+    "static/media/jupiter.png": "/shopping-cart/static/media/jupiter.2a1daa215d3dfb1ca615.png",
+    "static/media/taigaKagami.png": "/shopping-cart/static/media/taigaKagami.87d96c1cc7744acc5120.png",
+    "static/media/neptune.png": "/shopping-cart/static/media/neptune.ba8a0455814e1806b170.png",
+    "static/media/mercury.png": "/shopping-cart/static/media/mercury.6554716a289fe810a87d.png",
+    "static/media/Shakes.png": "/shopping-cart/static/media/Shakes.e16c776f85dc95010f89.png",
+    "static/media/dancingRasta.png": "/shopping-cart/static/media/dancingRasta.7402900836b67ff18ffd.png",
+    "static/media/elMatador.png": "/shopping-cart/static/media/elMatador.c14782f8331bc531f52b.png",
+    "static/media/uranus.png": "/shopping-cart/static/media/uranus.54671e27d538795004fa.png",
+    "static/media/twistingTyger.png": "/shopping-cart/static/media/twistingTyger.18022901bd39eff87a8d.png",
+    "static/media/saturn.png": "/shopping-cart/static/media/saturn.9bde70b15a25c74beaf5.png",
+    "static/media/aomineDaiki.jpg": "/shopping-cart/static/media/aomineDaiki.a6a5b5e0b3918e0ab0a8.jpg",
+    "static/media/earthAndMoon.png": "/shopping-cart/static/media/earthAndMoon.b71b153e366baacd188d.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.489ac196.css.map": "/shopping-cart/static/css/main.489ac196.css.map",
+    "main.dd34276d.js.map": "/shopping-cart/static/js/main.dd34276d.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.489ac196.css",
+    "static/js/main.dd34276d.js"
+  ]
+}
