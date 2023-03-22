@@ -1,12 +1,11 @@
 import Card from "./bodyComponents/Card";
-import images from "../imagesSrcs";
 import AssideNavBar from "./bodyComponents/AssideNavBar";
 
 const Shop = (props) => {
     const cathegory = "all"
-    let imagesToUse = images;
+    let imagesToUse = props.images;
     if (cathegory !== "all") {
-        imagesToUse = images.filter((img) => {
+        imagesToUse = props.images.filter((img) => {
             return img.type === cathegory;
         })
     }

@@ -1,8 +1,7 @@
 import Card from "./bodyComponents/Card";
-import images from "../imagesSrcs";
 
 const HomePage = (props) => {
-    const imagesToUseHere = images.filter((img) => {
+    const imagesToUseHere = props.images.filter((img) => {
         return img.type === props.cathegory;
     })
     return (

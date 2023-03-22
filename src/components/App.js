@@ -8,6 +8,7 @@ import Cathegory from "./bodyComponents/Cathegory";
 import ItemDetails from "./bodyComponents/ItemDetails";
 import { useEffect, useState } from "react";
 import Checkout from "./Checkout";
+import items from "../imagesSrcs";
 
 
 const App = () => {
@@ -21,6 +22,8 @@ const App = () => {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart])
 
+
+    const images = items.filter((item) => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
     const handleAddToCart = (item) => {
         if (cart.some((cartItem) => cartItem.id === item.id)) {
             return;
@@ -48,7 +51,7 @@ const App = () => {
         setCart(newCart);
     };
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/shopping-cart">
             <Header userCart={cart} onSearchChange={onSearchChange} searchTerm={searchTerm} />
             <NavBar />
             <Routes>
@@ -56,12 +59,17 @@ const App = () => {
                     onRemoveButtonClick={onRemoveButtonClick} />} />
                 <Route path="/"
                     element={<Page cathegory="Planet" userCart={cart}
-                        handleAddToCart={handleAddToCart} />} />
+                        handleAddToCart={handleAddToCart}
+                        images={images}
+                    />}
+                />
                 <Route path="/Shop" element={<Shop
                     handleAddToCart={handleAddToCart}
+                    images={images}
                 />} />
                 <Route path="/Shop/:cathegory" element={<Cathegory
                     handleAddToCart={handleAddToCart}
+                    images={images}
                 />} />
                 <Route path="/Shop/Item/:parameter"
                     element={<ItemDetails

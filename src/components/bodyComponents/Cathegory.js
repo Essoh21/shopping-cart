@@ -1,10 +1,9 @@
 import Card from "./Card";
-import images from "../../imagesSrcs";
 import { useParams } from "react-router-dom";
 
 const Cathegory = (props) => {
     const { cathegory } = useParams();
-    let imagesToUse = images.filter((img) => {
+    let imagesToUse = props.images.filter((img) => {
         return img.type === cathegory;
     })
 
