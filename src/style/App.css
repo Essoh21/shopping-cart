@@ -48,3 +48,10 @@
     gap: 2rem;
 
 }
+
+/* small devices */
+@media screen and (max-width: 800px) {
+    .AssideNavBar {
+        display: none;
+    }
+}

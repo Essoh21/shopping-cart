@@ -39,7 +39,7 @@ const App = () => {
     }
     const onQtyChange = (id, event) => {
         const newCart = cart.map(item => {
-            if (item.id === id) {
+            if ((item.id === id) && (Number(event.target.value) <= 5)) {
                 return { ...item, number: Number(event.target.value) };
             }
             return item;
