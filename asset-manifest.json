@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.489ac196.css",
-    "main.js": "/shopping-cart/static/js/main.dd34276d.js",
+    "main.css": "/shopping-cart/static/css/main.082cea4d.css",
+    "main.js": "/shopping-cart/static/js/main.c3f4a013.js",
     "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
     "static/media/moana.png": "/shopping-cart/static/media/moana.353ca7172abd7932ffe7.png",
     "static/media/midorimaShintarou.png": "/shopping-cart/static/media/midorimaShintarou.9e0e038daf5e0ef9e947.png",
@@ -25,12 +25,12 @@
     "static/media/aomineDaiki.jpg": "/shopping-cart/static/media/aomineDaiki.a6a5b5e0b3918e0ab0a8.jpg",
     "static/media/earthAndMoon.png": "/shopping-cart/static/media/earthAndMoon.b71b153e366baacd188d.png",
     "index.html": "/shopping-cart/index.html",
-    "main.489ac196.css.map": "/shopping-cart/static/css/main.489ac196.css.map",
-    "main.dd34276d.js.map": "/shopping-cart/static/js/main.dd34276d.js.map",
+    "main.082cea4d.css.map": "/shopping-cart/static/css/main.082cea4d.css.map",
+    "main.c3f4a013.js.map": "/shopping-cart/static/js/main.c3f4a013.js.map",
     "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.489ac196.css",
-    "static/js/main.dd34276d.js"
+    "static/css/main.082cea4d.css",
+    "static/js/main.c3f4a013.js"
   ]
 }
